@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+        font-family: 'Rubik Bubbles', cursive;
+      }
+      .normal {
+        color: white;
+        display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        font-size: 25px;
+      }
+      .disc {
+        color: white;
+        background-color: black;
+        padding: 5px;
+        position: fixed;
+        right: 10px;
+      }
+      .title {
+        color: white;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        font-size: 50px;
+        display: static;
+      }
+      hr {
+        color: white;
+        background-color: white;
+        margin: 50px 2px 20px 2px;
+        padding: 1px;
+      }
+      .ques {
+        text-align: center;
+        position: relative;
+        text-align: center;
+        top: -65px;
+        width: 70px;
+        font-size: 60px;
+      }
+      .false {
+        text-align: center;
+      }
+      input {
+        border: 2px solid white;
+        height: 100px;
+        width: 200px;
+        background-color: black;
+        margin: 80px 300px 20px 300px;
+        color: white;
+        box-sizing: border-box;
+        font-size: 60px;
+        padding: 50px 20px;
+        text-align: center;
+      }
+      .check-button {
+        display: block;
+        margin: 2px 305px;
+        width: 200px;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Rubik Bubbles', cursive;
+      }
+      .section {
+        position: absolute;
+        left: 60px;
+        top: 290px;
+      }
+      .aside {
+        position: absolute;
+        left: 960px;
+        top: 370px;
+      }
+      .aside-elem {
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+      }
+      .aside-elem1 {
+        padding: 0px 0px 40px 0px;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="normal again">Again!</div>
+      <div class="normal disc">(Between 1 and 20)</div>
+      <div class="title">Guess My Number...!</div>
+    </header>
+    <nav>
+      <hr />
+      <div class="false">
+        <div class="normal ques">?</div>
+      </div>
+    </nav>
+    <section class="section">
+      <input class="input" type="number" />
+      <button class="normal check-button">Check!</button>
+    </section>
+    <article></article>
+    <aside class="aside">
+      <div class="aside-elem aside-elem1">Start guessing...!</div>
+      <div class="aside-elem aside-elem2">
+        Score : <span class="score-span">0</span>
+      </div>
+      <div class="aside-elem aside-elem3">
+        Highscore : <span class="highscore-span">0</span>
+      </div>
+    </aside>
+  </body>
+
+  <script src="json44.js"></script>
+</html>
